@@ -1,0 +1,339 @@
+.second-heading,
+.fade-in-left,
+.about-animation,
+.your-animated,
+.dentist-animation,
+.image-animation,
+.zoom-in,
+.visit-text-animation,
+.our-dental-aenimation,
+.services-animation,
+.testomonail-animation,
+.accepting-animation,
+.insurance-animation,
+.insu-image-animation,
+.certificaton-animation,
+.text-animation,
+.conveniently-animation,
+.map-animation,
+.frist-img-animation,
+.second-img-animation,
+.smile-animation,
+.hedingg-animation p,
+.office-heding-animation p,
+.theme-button-animation,
+
+.about-content-wrap,
+.about-img-wrap,
+.our-team-wrap,
+.service-inner-wrap,
+.service-view-left-wrap,
+.service-view-right-wrap,
+.blog-post-card,
+.blog-details-area,
+.animation-left,
+.animation-bottom,
+.animation-right {
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+.second-heading {
+  transform: translateY(-50px);
+}
+.second-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  transform: translateX(-50px);
+}
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.about-animation {
+  transform: translateY(-50px);
+}
+.about-animation.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.your-animated {
+  transform: translateX(50px);
+}
+.your-animated.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dentist-animation {
+  transform: translateY(-50px);
+}
+.dentist-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.image-animation {
+  transform: translateY(70px);
+}
+.image-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.zoom-in { 
+  transform: scale(0);
+}
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.visit-text-animation {
+  transform: translateX(50px); 
+}
+.visit-text-animation.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.our-dental-aenimation {
+  transform: translateX(-50px);
+}
+.our-dental-aenimation.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.services-animation {
+  transform: translateX(50px);
+}
+.services-animation.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.testomonail-animation {
+  transform: translateY(-70px);
+}
+.testomonail-animation.visible {
+  opacity: 1;  
+  transform: translateY(0);
+}
+
+.accepting-animation {
+  transform: translateY(70px);
+}
+.accepting-animation.visible {
+  opacity: 1; 
+  transform: translateY(0);
+}
+.insurance-animation {
+  transform: translateX(-50px);
+}
+.insurance-animation.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.insu-image-animation {
+  transform: translateX(50px);
+}
+.insu-image-animation.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.certificaton-animation {
+  transform: translateY(-50px);
+}
+.certificaton-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.text-animation {
+  transform: translateY(70px);
+}
+.text-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.conveniently-animation {
+  transform: translateY(-50px);
+}
+.conveniently-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.map-animation {
+  transform: translateY(-50px);
+}
+.map-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.frist-img-animation {
+  transform: translateY(-50px);
+}
+.frist-img-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.second-img-animation {
+  transform: translateY(70px);
+}
+.second-img-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.smile-animation {
+  transform: translateY(-50px);
+}
+.smile-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hedingg-animation p  {
+  transform: translateY(-15px);
+}
+.hedingg-animation p.visible {
+  opacity: 1;
+  transform: translateY(0);  
+}
+.office-heding-animation p {
+  transform: translateY(-15px);
+}
+.office-heding-animation p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.theme-button-animation {
+  transform: translateY(-15px);
+}
+.theme-button-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* banner-wrapper-animation-css */
+.dental-animation {
+  animation: heading 2s ease;
+}
+
+
+/* about page css */
+.about-img-wrap {
+  transform: translateX(-50px);
+}
+.about-img-wrap.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.about-content-wrap {
+  transform: translateX(50px);
+}
+.about-content-wrap.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.our-team-wrap {
+  transform: translateY(-50px);
+}
+.our-team-wrap.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* dental-service page css */
+.service-inner-wrap {
+  transform: translateY(-50px);
+}
+.service-inner-wrap.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* service-view page css */
+.service-view-left-wrap {
+  transform: translateX(-50px);
+}
+.service-view-left-wrap.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.service-view-right-wrap {
+  transform: translateX(50px);
+}
+.service-view-right-wrap.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* blog page css */
+.blog-post-card {
+  transform: translateY(-50px);
+}
+.blog-post-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* blog-view page css */
+.blog-details-area {
+  transform: translateY(-50px);  
+}
+.blog-details-area.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* contact page css */
+.animation-left {
+  transform: translateX(-50px);
+}
+.animation-left.visible {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.animation-bottom {
+  transform: translateY(-50px);
+}
+.animation-bottom.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.animation-right {
+  transform: translateX(50px);
+}
+.animation-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes heading {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.banner-image-animation {
+  animation: image 2s ease;
+}
+@keyframes image {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* banner-wrapper-animation-css end */
+

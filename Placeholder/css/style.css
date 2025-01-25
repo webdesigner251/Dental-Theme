@@ -1,0 +1,2469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+@font-face {
+  font-family: "Merienda", serif;
+  font-weight: bold;
+  src: url("../font/Fontspring-DEMO-peachi-medium.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "peachi-regular";
+  src: url("../font/Fontspring-DEMO-peachi-regular.otf");
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+/* ========================================== home page css start ============================================ */
+/* ============================== */
+/* Header Start */
+/* ============================== */
+
+.navbar-toggler-icon {
+  background-image: url("../icon/icon-menu.svg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-toggler {
+  border: unset !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+nav.navbar.navbar-expand-lg {
+  padding-top: 15px;
+}
+
+.header-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #2a93b6 !important;
+}
+
+a.nav-link.active {
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+
+a.nav-link.active:hover {
+  color: #2a93b6;
+}
+
+a.nav-link {
+  font-size: 16px;
+  color: black;
+  transition: all 0.3s ease-in;
+}
+
+a.nav-link:hover,
+a.nav-link:active {
+  font-size: 16px;
+  color: #2a93b6;
+}
+
+ul.navbar-nav {
+  gap: 21px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f3fbff;
+}
+
+.theme-button a {
+  background-color: #0d7d8c;
+  color: white;
+  padding: 14px 30px;
+  border: 1px solid #009fb8;
+  border-radius: 40px;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+
+.theme-button a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #0d7d8c;
+}
+
+/* ============================== */
+/* Header end */
+/* ============================== */
+
+/* ============================== */
+/* Banner section start */
+/* ============================== */
+.banner-wrapper {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  background-color: #f3fbff;
+}
+
+.heading-wrapper h1 {
+  font-size: 70px;
+  line-height: 80px;
+  padding-bottom: 30px;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+}
+
+.heading-wrapper p {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.banner-image {
+  position: relative;
+}
+
+.banner-image img {
+  object-fit: contain;
+  height: 100%;
+  max-width: 570px;
+}
+
+.banner-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../icon/smile-big.svg') no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+/* ============================== */
+/* Banner section end */
+/* ============================== */
+
+/* ============================== */
+/* About section Start */
+/* ============================== */
+.text-effect {
+  position: relative;
+}
+
+.text-effect::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: -100px;
+  bottom: 0;
+  left: auto;
+  background: url(../icon/text-effect.svg);
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  transform: rotateZ(340deg);
+}
+
+.right-arrow {
+  width: 2%;
+}
+
+.about-wrapper {
+  padding-bottom: 68px;
+  padding-top: 150px;
+}
+
+.second-heading h2 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 66px;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+}
+
+.second-heading h2 span {
+  color: #0d7d8c;
+}
+
+.about-your {
+  text-align: center;
+  margin-top: 87px;
+  position: relative;
+}
+
+.about-your h3 {
+  font-size: 27px;
+  color: #25757e;
+  padding-bottom: 10px;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+.vector-smile {
+  width: 130%;
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  left: -20px;
+  right: 0;
+  margin: 0 auto;
+}
+
+.member-image {
+  width: 140px;
+  height: 140px;
+  padding: 34px;
+  border-radius: 68px;
+  margin-bottom: 30px;
+  background: #eef9fa;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image .icon {
+  width: 50px;
+}
+
+p.text-wrapper {
+  color: #454849;
+  line-height: normal;
+  font-size: 20px;
+  max-width: 350px;
+  margin: 0 auto !important;
+}
+
+/* ============================== */
+/* About section end */
+/* ============================== */
+
+
+/* ============================== */
+/* new-dentist section Start */
+/* ============================== */
+.new-dentist-wrapper {
+  background-color: #f3fbff;
+  padding-top: 70px;
+}
+
+.awards-icon-wrapper {
+  padding: 17px;
+  border-radius: 50px;
+  background: white;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px 0px rgb(0 0 0 / 15%);
+}
+
+.awards-icon-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.medium-heading {
+  font-size: 28px;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+}
+
+.education-awards span {
+  color: #0c7785;
+}
+
+.para {
+  color: #535558;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.awards-deteils h4 {
+  font-family: "Merienda", serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.dentist-image {
+  position: relative;
+  width: 100%;
+}
+
+.dentist-image::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  background: #d2e5e8;
+  border-radius: 360px 360px 0px 0px;
+  z-index: -1;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: auto;
+}
+
+.dentist-image img {
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  width: 100%;
+}
+
+.sub-title {
+  border: 1px solid #819ca0;
+  border-top: 0px;
+  width: 30%;
+  position: relative;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+.sub-title::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 15px;
+  background-color: #009fb8;
+  margin: 0 auto 0;
+  left: -1%;
+  top: -8px;
+}
+
+.sub-title.center::after {
+  left: 0;
+  right: 0;
+}
+
+/* ============================== */
+/* new-dentist section  end */
+/* ============================== */
+
+
+/* ============================== */
+/* visit-wrapper Start */
+/* ============================== */
+
+.visit-wrapper {
+  padding: 130px 0px;
+}
+
+.visit-image-wrapper img {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ============================== */
+/* visit-wrapper End */
+/* ============================== */
+
+
+/* ============================== */
+/* our-service-wrapper start */
+/* ============================== */
+
+.our-service-wrapper {
+  position: relative;
+}
+
+.dental-service-icon {
+  font-size: 25px;
+  border: 1px dashed #cad7dc;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  height: 83px;
+  aspect-ratio: 1;
+  box-shadow: 0px 0px 10px 3px #0d7d8c12;
+}
+
+.service-content-wrapper h3 {
+  font-size: 27px;
+  font-weight: 500;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+}
+
+.service-content-wrapper p {
+  padding-top: 13px;
+}
+
+.dental-service-box {
+  border: 1px solid #00000024;
+  padding: 25px;
+  height: auto;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0px 0px 18px 0px rgb(12 125 140 / 15%);
+  transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.dental-service-box:hover {
+  border-color: #0c7785;
+}
+
+.dental-service-first-col {
+  margin-top: 160px;
+}
+
+.dental-service-second-col {
+  margin-top: 81px;
+}
+
+.dental-service-box img {
+  width: 57%;
+}
+
+.dental-service-third-col {
+  margin-top: 60px;
+}
+
+.service-content-wrapper .readmore-btn {
+  text-decoration: none;
+  color: #0c7d8c;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 13px;
+}
+
+/* ============================== */
+/* our-service-wrapper  end */
+/* ============================== */
+
+
+/* ============================== */
+/* our-testimonials-wrapper start */
+/* ============================== */
+.our-testimonials-wrapper {
+  background: url(../icon/Testimonials-back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 270px;
+  padding-bottom: 100px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.second-heading.white-text .text-effect::after {
+  background: url(../icon/text-effect-2.svg) no-repeat;
+}
+
+.second-heading.white-text .sub-title {
+  border-color: #ffffff87;
+}
+
+.swiper-wrapper {
+  margin-top: 45px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial-box-wrapper {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.testimonial-box-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.testimonials-top-wrapper h4 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.silde-text p {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 29px;
+}
+
+i.fa-solid.fa-star {
+  font-size: 11px;
+  color: #ffbb00;
+}
+
+.rating-wrapper {
+  line-height: 16px;
+}
+
+p.date {
+  font-size: 16px;
+}
+
+.Google {
+  font-size: 20px;
+  color: #277d86;
+  font-weight: 500;
+}
+
+.silder-image img {
+  width: 100%;
+  height: 55px;
+}
+
+div#swiper-button {
+  position: relative;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: unset !important;
+  margin: 0 !important;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  background: white;
+  border: none;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 22px !important;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  color: #0c7785;
+}
+
+.swiper-button-prev {
+  padding: 24px;
+  transition: all 0.2s ease-in;
+}
+
+.swiper-button-next {
+  padding: 24px;
+  transition: all 0.2s ease-in;
+}
+
+.swiper-button-next:hover {
+  background-color: #83b4bb;
+}
+
+.swiper-button-prev:hover {
+  background-color: #83b4bb;
+}
+
+/* ============================== */
+/* our-testimonials-wrapper end */
+/* ============================== */
+
+/* ============================== */
+/* insurance-wrapper */
+/* ============================== */
+.insurance-wrapper {
+  padding-top: 130px;
+  position: relative;
+}
+
+.insurance-image img {
+  width: 100%;
+  margin-top: 39px;
+  border-radius: 21px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.list-item {
+  padding-left: 18px;
+  padding-top: 11px;
+  padding-bottom: 30px;
+}
+
+.insurance-details-wrapper h5 {
+  font-size: 32px;
+  color: #147c88;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+}
+
+.list-item li {
+  font-size: 17px;
+  padding: 4px;
+  color: #4e5053;
+  font-weight: 500;
+}
+
+::marker {
+  color: #147c9b !important;
+}
+
+.logo-img-wraper {
+  text-align: center;
+  border: 1px solid #0d7d8c61;
+  height: 80px;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-img-wraper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.accepting-name hr {
+  width: 24%;
+  margin: 0 auto;
+  padding-bottom: 18px;
+  margin-top: 22px;
+}
+
+.swiper.mySwiper-2.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+.swiper.mySwiper-2 {
+  position: relative;
+}
+
+div#swiper-logo-navigation {
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: unset !important;
+}
+
+.swiper-button-prev.btn:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  color: rgb(255, 255, 255);
+  font-size: 17px !important;
+}
+
+.swiper-button-next.btn:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  color: rgb(255, 255, 255);
+  font-size: 17px !important;
+}
+
+.swiper-button-next.btn {
+  padding: 22px;
+  background: #0c7785;
+  transition: all 0.2s ease-in;
+  border-radius: 50px;
+}
+
+.swiper-button-next.btn:hover {
+  background: #a7aaab;
+}
+
+.swiper-button-prev.btn {
+  padding: 22px;
+  background: #0c7785;
+  transition: all 0.2s ease-in;
+  border-radius: 50px;
+}
+
+.swiper-button-prev.btn:hover {
+  background: #a7aaab;
+}
+
+/* ============================== */
+/* insurance-wrapper end */
+/* ============================== */
+
+
+/* ============================== */
+/* certifications-wrapper start */
+/* ============================== */
+.certifications-wrapper {
+  padding-bottom: 200px;
+  background: url(../image/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.certificaton-card img {
+  width: 70%;
+}
+
+.certificaton {
+  padding-top: 20%;
+}
+
+.card-certification-first {
+  margin-top: 150px;
+}
+
+.card-certification-second {
+  margin-top: 100px;
+}
+
+.card-certification-third {
+  margin-top: 50px;
+}
+
+.certificaton-card {
+  height: 106px;
+  background-color: #fff;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #819ca03b;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px #0d7d8c21;
+}
+
+/* ============================== */
+/* certifications-wrapper end */
+/* ============================== */
+
+/* ============================== */
+/* location-wrapper start */
+/* ============================== */
+.location-wrapper {
+  margin-bottom: 90px;
+}
+
+ul.conveniently-list-item {
+  padding-top: 17px;
+  padding-left: 17px;
+  list-style: none;
+}
+
+ul.conveniently-list-item li {
+  color: black;
+  font-weight: 500;
+  padding: 7px;
+  position: relative;
+}
+
+ul.conveniently-list-item li::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 100%;
+  background: url('../icon/right-arrow-circle.svg') no-repeat;
+  background-position: 100% 8%;
+  background-size: contain;
+  left: -30px;
+}
+
+.map-wrapper {
+  position: relative;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 650px;
+  border-radius: 0px 0px 270px 270px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.map-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  right: 0;
+  background: url(../icon/half-circle.svg) no-repeat;
+  background-position: bottom;
+  background-size: calc(100% - 10%);
+  width: 100%;
+  height: 100%;
+}
+
+.location-wrapper::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  width: 45%;
+  background: linear-gradient(#f3fbff 0%, #FFF 100%);
+  border-radius: 10px 68px 68px 10px;
+  z-index: -10;
+  height: 100%;
+}
+
+.location-wrapper {
+  position: relative;
+}
+
+.location-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  bottom: 0;
+  right: 0px;
+  width: 45%;
+  background: linear-gradient(#f3fbff 0%, #FFF 100%);
+  border-radius: 68px 10px 10px 68px;
+  z-index: -10;
+  height: 100%;
+}
+
+.located-background {
+  background: linear-gradient(#f3fbff 0%, #FFF 100%);
+  padding: 20px 60px;
+  border-radius: 38px 38px 38px 38px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ============================== */
+/* location-wrapper end */
+/* ============================== */
+
+
+/* ============================== */
+/* cta-wrapper Start */
+/* ============================== */
+.cta-wrapper {
+  background: #f3fbff;
+  padding-top: 140px;
+  margin-top: 200px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.cta-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  background-color: #f3fbff;
+}
+
+.visit-deteils-2 {
+  text-align: center;
+}
+
+.call-visit {
+  text-align: center;
+}
+
+i.fa-regular.fa-face-smile {
+  font-size: 85px;
+  color: #fcd477;
+  padding-bottom: 17px;
+}
+
+.visit-deteils-2 p {
+  font-size: 16px;
+}
+
+.frist-image img {
+  width: 100%;
+  height: 460px;
+  margin-top: -400px;
+  border-radius: 210px 210px 50px 50px;
+  object-fit: cover;
+}
+
+.second-image img {
+  width: 100%;
+  height: 420px;
+  border-radius: 210px 210px 50px 50px;
+  margin-top: -100px;
+  object-fit: cover;
+}
+
+/* ============================== */
+/* cta-wrapper End */
+/* ============================== */
+
+/* ============================== */
+/* Footer Start */
+/* ============================== */
+footer {
+  padding-top: 20%;
+  padding-bottom: 25px;
+  background-image: url("../icon/footer-background.svg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+
+.footer-logo {
+  height: auto;
+  max-width: 100px;
+  margin-bottom: 30px;
+}
+
+.footer-heading-widget {
+  font-family: "Merienda", serif;
+  font-weight: bold;
+  font-size: 23px;
+  padding-bottom: 15px;
+}
+
+.footer-icon a i {
+  font-size: 17px;
+  background: #3a4052;
+  color: white;
+  padding: 10px;
+  border-radius: 53px;
+  transition: all 0.3s ease-in;
+}
+
+.footer-icon a i:hover {
+  background-color: #0d7d8c;
+}
+
+.footer-text p {
+  font-size: 13px;
+}
+
+.menu-widget p a {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: white;
+  transition: all 0.3s ease-in !important;
+}
+
+.menu-list {
+  font-size: 13px;
+  line-height: 24px;
+  color: white;
+  transition: all 0.3s ease-in !important;
+}
+
+.menu-list a {
+  color: white;
+  transition: all 0.3s ease-in !important;
+}
+
+.menu-list a:hover {
+  color: #79c3cd;
+}
+
+.office-heding-animation a p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-widget p a:hover,
+.menu-list:hover {
+  color: #79c3cd;
+}
+
+.container.line hr {
+  margin-top: 48px;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 20px;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  display: none;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 22px;
+  cursor: pointer;
+  z-index: 4;
+  box-shadow: 0px 10px 20px 0px #0d7e8c4f;
+}
+
+.visit a {
+  background-color: #fcd477;
+  color: #232940;
+  padding: 14px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.visit a:hover {
+  background-color: #ffb200;
+}
+
+/* ============================== */
+/* Footer end */
+/* ============================== */
+
+/* ========================================== home page css start ============================================ */
+
+/* ========================================== Contact page css start ============================================ */
+.same-banner-wrapper {
+  background-color: #f3fbff;
+  padding: 100px 12px;
+}
+
+.same-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.same-heading h2 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 66px;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+}
+
+.same-heading h2 span {
+  color: #0d7d8c;
+}
+
+.text-effect::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: -100px;
+  bottom: 0;
+  left: auto;
+  background: url(../icon/text-effect.svg);
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  transform: rotateZ(340deg);
+}
+
+.breadcrumb-wrap ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.breadcrumb-wrap ul.breadcrumb li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.breadcrumb-wrap ul.breadcrumb li a {
+  color: #0d7d8c;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb-wrap ul.breadcrumb li a:hover {
+  color: #000;
+}
+
+/* details-wrapper section */
+.details-wrapper {
+  padding: 80px 12px;
+  background-color: #fff;
+}
+
+.details-box-wrapper {
+  padding: 30px 30px 30px 30px;
+  border: 1px solid #DBE5E2;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.details-box-wrapper:hover .member-image .details-img-1 {
+  transform: rotate3d(15, 15, 15, 360deg);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.details-content a {
+  color: #454849;
+  line-height: normal;
+  font-size: 16px;
+  margin: 0 auto !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.details-content a:hover {
+  color: #0d7d8c;
+}
+
+.details-box-wrapper h3 {
+  transition: all 0.3s ease-in-out;
+}
+
+.details-box-wrapper:hover h3 {
+  color: #000;
+}
+
+/* location-wrapper section */
+.location-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.location-heading h2 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 66px;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.location-heading h2 .text-effect::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: -100px;
+  bottom: 0;
+  left: auto;
+  background: url(../icon/text-effect-3.svg);
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  transform: rotateZ(340deg);
+}
+
+.location-form {
+  background-color: #0c7785;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.location-form form .input-login-form {
+  padding: 10px 20px 14px;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.location-form form textarea.input-login-form {
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+
+.input-wrap input::placeholder,
+.input-wrap textarea::placeholder {
+  font-size: 16px;
+}
+
+.location-form form button {
+  background-color: #fff;
+  color: #0d7d8c;
+  padding: 14px 30px;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+
+.location-form form button:hover,
+.location-form form button:active {
+  background-color: #0d7d8c !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+/* ========================================== Contact page css end ============================================ */
+
+/* ========================================== About page css start ============================================ */
+.about-area {
+  padding: 80px 12px 0px;
+}
+
+.about-img-left img {
+  max-width: 300px;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.about-img-right-top img,
+.about-img-right-bottom img {
+  max-width: 300px;
+  width: 100%;
+  height: 265px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.about-img-count {
+  position: absolute;
+  min-height: 200px;
+  width: 200px;
+  display: flex;
+  left: 30%;
+  right: 0;
+  top: 30%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.1);
+  background-color: #0d7d8c;
+}
+
+.card-heading {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1em;
+  color: #fff;
+}
+
+.card-heading-div p.text-p {
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-content-wrap {
+  padding: 48px 16px 48px 80px;
+}
+
+.about-subtitle-wrap h6 {
+  color: #0d7d8c;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.about-title-wrap h2 {
+  color: #000;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1em;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+}
+
+.about-description-wrap p {
+  font-size: 16px;
+  font-weight: 400;
+  color: slategrey;
+  line-height: 1.4em;
+}
+
+.about-vision-mission-wrap {
+  padding: 20px 0px;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  border-color: #dcdde8;
+}
+
+.about-vision-icon {
+  margin-right: 16px;
+}
+
+.about-vision-icon svg {
+  width: 80px;
+  height: 80px;
+  background-color: #0d7d8c;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 6px;
+}
+
+.about-vision-title {
+  margin-bottom: 8px;
+}
+
+.about-vision-title span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.about-vision-desc p {
+  font-size: 16px;
+  font-weight: 400;
+  color: slategrey;
+  line-height: 1.3em;
+}
+
+
+.our-team-area {
+  padding: 80px 12px 0px;
+}
+
+.our-team-wrap {
+  margin: 50px 0px 50px !important;
+}
+
+.our-team-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 34px 14px 14px;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-team-box:hover {
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.1);
+}
+
+.our-team-img img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.our-team-social {
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: -35px;
+  background-color: #0c7d8c;
+  width: 90%;
+  gap: 10px;
+}
+
+.our-team-social span a {
+  background-color: transparent;
+  padding: 8px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-team-social span a:hover {
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.our-team-social span a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.our-team-social span a svg path,
+.our-team-social span a svg g path {
+  fill: #fff;
+}
+
+.our-team-social span a:hover svg path,
+.our-team-social span a:hover svg g path {
+  fill: #0c7785;
+}
+
+.our-team-box-content {
+  padding: 20px 15px;
+}
+
+.our-team-box-title h3 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #000;
+}
+
+.our-team-box-tag p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ========================================== About page css end ============================================ */
+
+
+/* ========================================== Blog page css start ============================================ */
+.blog-area {
+  padding: 80px 12px;
+}
+
+.blog-post-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  cursor: pointer;
+}
+
+.blog-post-card:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .15);
+}
+
+.blog-post-tag {
+  background-color: #0c7d8c;
+  color: #fff;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+.blog-post-tag p {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.blog-post-img {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.blog-post-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.blog-post-text {
+  padding: 20px;
+}
+
+.blog-post-title a h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3em;
+  color: #000;
+}
+
+.blog-post-card:hover .blog-post-title a h3 {
+  color: #0c7d8c;
+}
+
+.blog-post-desc p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: slategray;
+}
+
+.blog-post-date {
+  padding: 10px 20px;
+  border-top: 1px solid #dcdde8;
+  width: 100%;
+}
+
+.blog-post-date span {
+  font-size: 13px;
+  line-height: 1.5em;
+  color: #adadad;
+}
+
+.blog-post-date span:last-child::before {
+  content: ".";
+  margin: 0px 5px;
+}
+
+/* ========================================== Blog page css end ============================================ */
+
+/* ========================================== dental-service page css start ============================================ */
+.service-area {
+  padding: 80px 12px;
+}
+
+.service-inner-wrap {
+  cursor: pointer;
+  height: 100%;
+}
+
+.service-title h3 {
+  padding: 0px 0px 22px 0px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #dbe5e2;
+}
+
+.service-description p {
+  margin-bottom: 24px !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: slategrey;
+}
+
+.service-post-img {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.service-inner-wrap .dental-service-box {
+  height: 100%;
+}
+
+.dental-service-box:hover .service-post-img::before {
+  transform: scale(1);
+  transition: 400ms ease;
+  opacity: 0.3;
+}
+
+.service-post-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 400ms ease;
+  background: #0d7d8c;
+  transform: scale(0);
+  border-radius: 20px;
+}
+
+.service-post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ========================================== dental-service page css end ============================================ */
+
+/* ========================================== service-view page css start ============================================ */
+.service-view-area {
+  padding: 80px 12px;
+}
+
+.service-view-left-title h3 {
+  font-size: 34px;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+  line-height: 1.3em;
+  font-weight: 500;
+  color: #0d7d8c;
+}
+
+.service-view-left-content P {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #212529;
+}
+
+.service-view-left-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 24px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.service-view-right-wrap {
+  padding-left: 100px;
+}
+
+.service-view-right-wrapper {
+  padding: 36px 30px;
+  border-top: 1px solid #0d7d8c61;
+  border-bottom: 1px solid #0d7d8c61;
+}
+
+.service-view-right-title h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6em;
+  color: #0d7d8c;
+}
+
+.service-view-right-content P {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #212529;
+}
+
+.service-number-title P {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #0d7d8c;
+}
+
+.service-number-title a {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #0d7d8c;
+}
+
+.related-service-area {
+  padding: 80px 12px 0px;
+}
+
+/* ========================================== service-view page css end ============================================ */
+
+/* ========================================== blog-view page css start ============================================ */
+.blog-details-wrap {
+  max-width: 991px;
+  padding: 80px 12px 0px;
+}
+
+.blog-details-img img {
+  max-width: 991px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-img-content {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.blog-img-content .blog-img-wrap img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.blog-img-content span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #424b5c;
+}
+
+.blog-img-content span:nth-child(2) {
+  padding-right: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.blog-img-content span:nth-child(2):after {
+  content: "";
+  clear: both;
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 13px;
+  background: #424b5c;
+  opacity: .15;
+  bottom: 1px;
+  right: 0px;
+}
+
+.blog-details-content h3 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Merienda", serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.blog-details-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px !important;
+  color: #424b5c;
+}
+
+.quote {
+  background: rgba(110, 158, 250, 0.1);
+  border-radius: 2px;
+  padding: 15px 50px;
+  font-style: italic;
+  font-weight: 600 !important;
+  margin-left: 20px !important;
+  line-height: 26px !important;
+}
+
+/* ========================================== blog-view page css end ============================================ */
+/* ============================== */
+/* Responsive Start */
+/* ============================== */
+@media (max-width: 1199px) {
+  ul.navbar-nav {
+    gap: 2px;
+  }
+
+  section.certifications-wrapper {
+    padding-bottom: 90px;
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .heading-wrapper h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  ul.navbar-nav {
+    background: white;
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 6px;
+    box-shadow: 0px 2px 20px 0px #0d7d8c30;
+  }
+
+  .insurance-image img {
+    width: 100%;
+    margin-top: 39px;
+    border-radius: 21px;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .banner-wrapper {
+    padding: 0;
+  }
+
+  .heading-wrapper {
+    padding: 50px 0px 100px 0px;
+  }
+
+  ul.navbar-nav {
+    gap: 13px;
+    text-align: center;
+  }
+
+  .visit-image-wrapper {
+    width: 100%;
+  }
+
+  .schedule-heding h2 span {
+    font-size: 31px;
+  }
+
+  .schedule-heding h2 {
+    font-size: 35px;
+  }
+
+  section.visit-wrapper,
+  .about-wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  section.new-dentist-wrapper {
+    padding-bottom: 70px;
+  }
+
+  div#navbarSupportedContent {
+    position: absolute;
+    width: 95%;
+    top: 70px;
+  }
+
+  .schedule-heding h2 {
+    line-height: 35px;
+  }
+
+  .visit-image-wrapper img {
+    padding-top: 30px;
+  }
+
+  .banner-image img {
+    max-width: 450px;
+  }
+
+
+  /* contact page css */
+  .located-background {
+    padding: 50px 60px;
+  }
+
+  /* about page css */
+  .about-area {
+    padding: 60px 12px 0px;
+  }
+
+  .about-content-wrap {
+    padding: 30px;
+  }
+
+  .about-title-wrap h2 {
+    font-size: 45px;
+    line-height: 1em;
+  }
+
+  .about-img-count {
+    min-height: 180px;
+    width: 180px;
+  }
+
+  .card-heading {
+    font-size: 50px;
+  }
+
+  .our-team-box-title h3 {
+    font-size: 20px;
+  }
+
+  /* service-view page css */
+  .service-view-right-wrap {
+    padding-left: 0;
+  }
+
+  /* blog page css */
+  .blog-area {
+    padding: 60px 12px;
+  }
+
+  .blog-post-title h3 {
+    font-size: 22px;
+  }
+
+  .service-description p {
+    font-size: 16px !important;
+  }
+
+  /* blog-view page css */
+  .blog-details-wrap {
+    padding: 60px 12px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  ul.navbar-nav {
+    gap: 21px;
+    text-align: center;
+  }
+
+  .heading-wrapper {
+    padding: 30px 0px;
+  }
+
+  .heading-wrapper h1 {
+    font-size: 37px;
+    line-height: 51px;
+  }
+
+  .health-heding h2 {
+    font-size: 35px;
+    line-height: 49px;
+  }
+
+  .health-heding h2 span {
+    font-size: 49px;
+  }
+
+  .schedule-heding h2 {
+    font-size: 25px;
+  }
+
+  .schedule-heding h2 span {
+    font-size: 25px;
+  }
+
+  .education-awards h2 {
+    font-size: 23px;
+    line-height: 45px;
+  }
+
+  .dental-service-first-col,
+  .dental-service-second-col,
+  .dental-service-third-col {
+    margin-top: 0;
+  }
+
+  .card-certification-first,
+  .card-certification-second,
+  .card-certification-third {
+    margin-top: 0;
+  }
+
+  section.new-dentist-wrapper {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .dentist-image img {
+    width: 100%;
+    height: 538px;
+  }
+
+  .insurance-image img {
+    width: 100%;
+    margin-top: 39px;
+    border-radius: 21px;
+    height: 330px;
+    object-fit: cover;
+  }
+
+  .first-image img,
+  .second-image img {
+    margin: 0 0 0 0;
+  }
+
+  .footer-heading-widget h2 {
+    padding-bottom: 0px;
+    margin-top: 15px;
+  }
+
+  button.btn.btn-dark.visit {
+    margin-top: 16px;
+    font-size: 13px;
+  }
+
+  iframe {
+    width: 90%;
+    height: 70vh;
+  }
+
+  footer {
+    padding: 19px;
+    padding-top: 40%;
+  }
+
+  .footer-logo {
+    height: auto;
+    width: 47%;
+  }
+
+  .logo-img {
+    width: 20%;
+  }
+
+  .visit-image-wrapper {
+    width: 100%;
+  }
+
+  .about-your {
+    text-align: center;
+    margin-top: 29px;
+  }
+
+  section.visit-wrapper {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .accepting-name h2 {
+    font-size: 34px;
+  }
+
+  .heading-wrapper h1 {
+    padding-bottom: 10px;
+  }
+
+  .second-heading h2 {
+    font-size: 27px;
+    line-height: 45px;
+  }
+
+  .text-effect::after {
+    background-size: contain !important;
+    height: 30px;
+    width: 30px;
+    right: unset;
+    bottom: unset;
+    margin-left: 5px;
+  }
+
+  section.cta-wrapper {
+    padding-bottom: 60px;
+    padding-top: 70px;
+  }
+
+  section.about-wrapper {
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+
+  .header-logo {
+    max-width: 69px;
+    height: auto;
+  }
+
+  .new-dentist-wrapper {
+    background: url(../image/background.svg);
+    background-repeat: no-repeat;
+    background-size: 1530%;
+    background-position: center;
+  }
+
+  .certifications-wrapper {
+    background: url(../image/background.svg);
+    background-repeat: no-repeat;
+    background-size: 1500%;
+    background-position: center;
+  }
+
+  section.certifications-wrapper {
+    padding-bottom: 40px;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  section.insurance-wrapper {
+    padding-top: 70px;
+  }
+
+  .accepting-name h2 {
+    font-size: 25px;
+    line-height: 53px;
+  }
+
+  section.location-wrapper {
+    margin-top: 20px;
+  }
+
+  .certificaton {
+    padding-top: 10px;
+  }
+
+  section.our-testimonials-wrapper {
+    margin-top: 0px;
+  }
+
+  .banner-image img {
+    object-fit: contain;
+    height: 359px;
+  }
+
+  section.location-wrapper {
+    padding-bottom: 50px;
+  }
+
+  section.location-wrapper::before {
+    display: none;
+  }
+
+  section.location-wrapper::after {
+    display: none;
+  }
+
+  section {
+    scroll-margin-top: 90px;
+  }
+
+  .theme-button a {
+    font-size: 14px;
+  }
+
+  .visit a {
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .frist-image img {
+    margin-top: 0;
+  }
+
+  .cta-wrapper {
+    margin-top: 0;
+  }
+
+  section.location-wrapper {
+    padding-bottom: 0;
+  }
+
+
+  /* contact page css */
+  .same-heading h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .location-heading h2 {
+    font-size: 40px;
+  }
+
+  .location-heading h2 .text-effect::after {
+    background-size: contain !important;
+    height: 30px;
+    width: 30px;
+    right: unset;
+    bottom: unset;
+    margin-left: 5px;
+  }
+
+  .located-background {
+    padding: 20px;
+  }
+
+  .location-wrapper .map-wrapper iframe {
+    padding-top: 0;
+  }
+
+  .about-your h3 {
+    font-size: 22px;
+  }
+
+  /* about page css */
+  .about-title-wrap h2 {
+    font-size: 40px;
+  }
+
+  .about-vision-icon svg {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+  }
+
+  .about-img-count {
+    min-height: 160px;
+    width: 160px;
+  }
+
+  .card-heading {
+    font-size: 30px;
+  }
+
+  .service-post-img {
+    margin-bottom: 15px;
+  }
+
+  .about-img-left img {
+    height: 350px;
+  }
+
+  .about-img-right-top img,
+  .about-img-right-bottom img {
+    height: 166px;
+  }
+
+  .card-heading-div p.text-p {
+    font-size: 12px !important;
+  }
+
+  .about-content-wrap {
+    padding: 16px;
+  }
+
+  /* dental-service page css */
+  .dental-service-box {
+    padding: 20px;
+  }
+
+  .service-title h3 {
+    padding: 0px 0px 15px 0px;
+    margin-bottom: 15px;
+  }
+
+  .service-description p {
+    font-size: 14px !important;
+  }
+
+  /* blog-view page css */
+  .blog-details-wrap {
+    max-width: 100%;
+  }
+
+  .blog-details-content h3 {
+    font-size: 26px;
+  }
+
+  .blog-details-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .quote {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  p {
+    font-size: 16px;
+  }
+
+  .health-heding h2 {
+    font-size: 38px;
+    line-height: 51px;
+  }
+
+  .health-heding h2 span {
+    font-size: 54px;
+  }
+
+  .accepting-name h2 {
+    font-size: 32px;
+    line-height: 49px;
+  }
+
+  .sub-titlee {
+    margin: 0 auto;
+    margin-top: 28px;
+  }
+
+  .testomonail-heding {
+    text-align: center;
+  }
+
+  .insurance-details-wrapper h5 {
+    padding-top: 30px;
+  }
+
+  div#swiper-logo-navigation {
+    position: unset;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 14px;
+  }
+
+  .logo-swiper-parent {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .swiper-button-next {
+    margin: 0 !important;
+  }
+
+  .swiper-button-prev {
+    margin: 0 !important;
+  }
+
+  section.cta-wrapper {
+    padding-bottom: 0;
+  }
+
+
+  /* same banner css */
+  .breadcrumb-wrap ul.breadcrumb li {
+    font-size: 14px;
+  }
+
+  /* contact page css */
+  .same-heading h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  /* about page css */
+  .about-area {
+    padding: 50px 12px 0px;
+  }
+
+  .about-title-wrap h2 {
+    font-size: 30px;
+  }
+
+  .about-description-wrap p {
+    font-size: 16px;
+  }
+
+  .about-vision-title span {
+    font-size: 18px;
+  }
+
+  .about-vision-desc p {
+    font-size: 16px;
+  }
+
+  .about-img-count {
+    min-height: 140px;
+    width: 140px;
+  }
+
+  .about-content-wrap {
+    padding: 20px 0px 0px;
+  }
+
+  .our-team-box {
+    padding: 14px;
+  }
+
+  .our-team-box-content {
+    padding: 10px;
+  }
+
+  .our-team-wrap {
+    margin: 30px 0px 30px !important;
+  }
+
+  .our-team-social {
+    padding: 10px;
+  }
+
+  .our-team-social span a {
+    padding: 5px 8px;
+  }
+
+  .our-team-social span a svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .our-team-box-title h3 {
+    font-size: 18px;
+  }
+
+  /* blog page css */
+  .blog-area {
+    padding: 30px 12px;
+  }
+
+  .blog-post-title h3 {
+    font-size: 20px;
+  }
+
+  .blog-post-desc p {
+    font-size: 16px;
+  }
+
+  .blog-post-img {
+    margin-bottom: 10px;
+  }
+
+  .blog-post-text {
+    padding: 15px;
+  }
+
+  /* blog-view page css */
+  .blog-details-wrap {
+    padding: 30px 12px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 14px !important;
+  }
+
+  .schedule-heding h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+
+  .service-content-wrapper p {
+    padding-top: 0px;
+    color: #0c7d8c;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .dental-service-icon {
+    height: 72px;
+    aspect-ratio: 1;
+  }
+
+  .service-content-wrapper h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .certificaton-card img {
+    width: 100%;
+  }
+
+  .heading-wrapper {
+    padding-top: 0px;
+  }
+
+  .banner-image img {
+    object-fit: contain;
+    height: 318px;
+  }
+
+  footer {
+    padding-top: 60%;
+  }
+
+  /* contact page css */
+  .details-content a {
+    font-size: 12px;
+  }
+
+  .about-your h3 {
+    font-size: 20px;
+  }
+
+  .details-content p {
+    font-size: 12px !important;
+  }
+}
+
+/* ============================== */
+/* Responsive End */
+/* ============================== */
