@@ -17,19 +17,6 @@ section {
   scroll-margin-top: 120px;
 }
 
-@font-face {
-  font-family: "Merienda", serif;
-  font-weight: bold;
-  src: url("../font/Fontspring-DEMO-peachi-medium.otf");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "peachi-regular";
-  src: url("../font/Fontspring-DEMO-peachi-regular.otf");
-  font-style: normal;
-}
-
 img {
   width: 100%;
 }
@@ -107,8 +94,9 @@ ul.navbar-nav {
 header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   background: #f3fbff;
+  box-shadow: 0px 4px 10px 0px #0000000d;
 }
 
 .theme-button a {
@@ -141,6 +129,23 @@ header {
   background-size: cover;
   display: flex;
   background-color: #f3fbff;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-wrapper::before {
+  content: "";
+  position: absolute;
+  background: url('../image/montains.svg') no-repeat;
+  background-size: cover;
+  background-position: top center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .heading-wrapper h1 {
@@ -664,6 +669,8 @@ div#swiper-button {
 }
 
 .logo-img-wraper {
+  padding: 15px;
+  background: #FFF;
   text-align: center;
   border: 1px solid #0d7d8c61;
   height: 80px;
@@ -700,7 +707,6 @@ div#swiper-button {
 div#swiper-logo-navigation {
   position: absolute;
   width: 100%;
-  z-index: 9;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -764,7 +770,9 @@ div#swiper-logo-navigation {
 }
 
 .certificaton-card img {
-  width: 70%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .certificaton {
@@ -784,7 +792,8 @@ div#swiper-logo-navigation {
 }
 
 .certificaton-card {
-  height: 106px;
+  height: 130px;
+  padding: 20px;
   background-color: #fff;
   border-radius: 13px;
   display: flex;
@@ -1841,6 +1850,11 @@ footer {
     top: 70px;
   }
 
+  .map-wrapper::before {
+    background-size: calc(105% - 10%);
+    bottom: 0;
+  }
+
   .schedule-heding h2 {
     line-height: 35px;
   }
@@ -2165,10 +2179,6 @@ footer {
     margin-left: 5px;
   }
 
-  .located-background {
-    padding: 20px;
-  }
-
   .location-wrapper .map-wrapper iframe {
     padding-top: 0;
   }
@@ -2433,10 +2443,6 @@ footer {
     font-weight: 500;
   }
 
-  .certificaton-card img {
-    width: 100%;
-  }
-
   .heading-wrapper {
     padding-top: 0px;
   }
@@ -2444,6 +2450,10 @@ footer {
   .banner-image img {
     object-fit: contain;
     height: 318px;
+  }
+
+  .located-background {
+    padding: 30px 30px;
   }
 
   footer {
