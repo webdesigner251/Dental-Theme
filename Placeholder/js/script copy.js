@@ -76,7 +76,7 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 // 
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
-    ".heading-wrapper, .second-heading, .about-your, .fade-in-left, .dentist-animation, .image-animation, .zoom-in, .visit-text-animation, .our-dental-aenimation, .services-animation, .testomonail-animation, .accepting-animation, .insurance-animation, .insu-image-animation, .certificaton-animation, .text-animation, .conveniently-animation, .map-animation, .frist-img-animation, .second-img-animation, .smile-animation, .hedingg-animation p, .office-heding-animation p, .theme-button-animation, .about-content-wrap, .about-img-wrap, .our-team-wrap, .service-inner-wrap, .service-view-left-wrap, .service-view-right-wrap, .blog-post-card, .blog-details-area, .animation-left, .animation-bottom, .animation-right"
+    ".second-heading, .about-your, .fade-in-left, .dentist-animation, .image-animation, .zoom-in, .visit-text-animation, .our-dental-aenimation, .services-animation, .testomonail-animation, .accepting-animation, .insurance-animation, .insu-image-animation, .certificaton-animation, .text-animation, .conveniently-animation, .map-animation, .frist-img-animation, .second-img-animation, .smile-animation, .hedingg-animation p, .office-heding-animation p, .theme-button-animation, .about-content-wrap, .about-img-wrap, .our-team-wrap, .service-inner-wrap, .service-view-left-wrap, .service-view-right-wrap, .blog-post-card, .blog-details-area, .animation-left, .animation-bottom, .animation-right"
   );
 
   const checkVisibility = () => {
