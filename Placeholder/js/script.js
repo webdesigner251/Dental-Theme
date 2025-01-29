@@ -73,8 +73,6 @@ const swiper2 = new Swiper(".mySwiper-2", {
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-//  
-
 // 
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(
@@ -123,7 +121,6 @@ $(document).ready(function () {
   });
 });
 // 
-// 
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".navbar-nav .nav-item .nav-link");
@@ -144,54 +141,5 @@ document.addEventListener("DOMContentLoaded", function () {
         link.classList.add("active");
       }
     });
-  });
-});    
-
-
-// counter js
-
-//https://stackoverflow.com/questions/23006516/jquery-animated-number-counter-from-zero-to-value
-$(function() {
-  ////////////////////////////////variables//constant variables
-
-  const winHeight = $(window).height(),
-    eleOffsetTop = $(".counting").offset().top,
-    eleTop = eleOffsetTop - winHeight,
-    current = 0;
-
-  $(window).on("scroll", function() {
-    const scrollTop = $(window).scrollTop();
-
-    if (current == 0 && scrollTop >= eleTop) {
-      
-
-        $('.counting').each(function() {
-  const $this = $(this),
-      countTo = $this.attr('data-count');
-  
-  $({ countNum: $this.text()}).animate({
-    countNum: countTo
-  },
-
-  {
-
-    duration: 2000,
-    easing:'linear',
-    step: function() {
-      $this.text(Math.floor(this.countNum));
-    },
-    complete: function() {
-      $this.text(this.countNum);
-      //alert('finished');
-      
-      //this inside the step callback isn't the element but the object passed to animate
-    }
-
-  });  
-
-});
-        
-    }
- 
   });
 });

@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif !important;
@@ -25,7 +26,6 @@ img {
 /* ============================== */
 /* Header Start */
 /* ============================== */
-
 .navbar-toggler-icon {
   background-image: url("../icon/icon-menu.svg") !important;
   background-size: cover;
@@ -160,7 +160,6 @@ header {
   font-size: 20px;
   font-weight: 500;
   color: black;
-  word-spacing: 3px;
   letter-spacing: 3px;
   padding-bottom: 20px;
 }
@@ -289,7 +288,6 @@ p.text-wrapper {
 /* About section end */
 /* ============================== */
 
-
 /* ============================== */
 /* new-dentist section Start */
 /* ============================== */
@@ -320,10 +318,6 @@ p.text-wrapper {
   font-size: 28px;
   font-family: "Merienda", serif;
   font-weight: bold;
-}
-
-.education-awards span {
-  color: #0c7785;
 }
 
 .para {
@@ -396,11 +390,9 @@ p.text-wrapper {
 /* new-dentist section  end */
 /* ============================== */
 
-
 /* ============================== */
 /* visit-wrapper Start */
 /* ============================== */
-
 .visit-wrapper {
   padding: 130px 0px;
 }
@@ -414,11 +406,9 @@ p.text-wrapper {
 /* visit-wrapper End */
 /* ============================== */
 
-
 /* ============================== */
 /* our-service-wrapper start */
 /* ============================== */
-
 .our-service-wrapper {
   position: relative;
 }
@@ -491,7 +481,6 @@ p.text-wrapper {
 /* ============================== */
 /* our-service-wrapper  end */
 /* ============================== */
-
 
 /* ============================== */
 /* our-testimonials-wrapper start */
@@ -580,7 +569,6 @@ p.date {
 div#swiper-button {
   position: relative;
 }
-
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -688,13 +676,6 @@ div#swiper-button {
   object-fit: contain;
 }
 
-.accepting-name hr {
-  width: 24%;
-  margin: 0 auto;
-  padding-bottom: 18px;
-  margin-top: 22px;
-}
-
 .swiper.mySwiper-2.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
   max-width: 88%;
   margin: 0 auto;
@@ -757,7 +738,6 @@ div#swiper-logo-navigation {
 /* ============================== */
 /* insurance-wrapper end */
 /* ============================== */
-
 
 /* ============================== */
 /* certifications-wrapper start */
@@ -907,7 +887,6 @@ ul.conveniently-list-item li::before {
 /* ============================== */
 /* location-wrapper end */
 /* ============================== */
-
 
 /* ============================== */
 /* cta-wrapper Start */
@@ -1088,7 +1067,6 @@ footer {
 /* ============================== */
 /* Footer end */
 /* ============================== */
-
 /* ========================================== home page css start ============================================ */
 
 /* ========================================== Contact page css start ============================================ */
@@ -1384,7 +1362,6 @@ footer {
   line-height: 1.3em;
 }
 
-
 .our-team-area {
   padding: 80px 12px 0px;
 }
@@ -1467,7 +1444,6 @@ footer {
 }
 
 /* ========================================== About page css end ============================================ */
-
 
 /* ========================================== Blog page css start ============================================ */
 .blog-area {
@@ -1555,7 +1531,6 @@ footer {
 }
 
 /* ========================================== Blog page css end ============================================ */
-
 
 /* ========================================== dental-service page css start ============================================ */
 .service-area {
@@ -1794,6 +1769,11 @@ footer {
     line-height: 60px;
   }
 
+  .second-heading h2 {
+    font-size: 42px;
+    line-height: normal;
+  }
+
   ul.navbar-nav {
     background: white;
     padding: 20px;
@@ -1827,14 +1807,6 @@ footer {
     width: 100%;
   }
 
-  .schedule-heding h2 span {
-    font-size: 31px;
-  }
-
-  .schedule-heding h2 {
-    font-size: 35px;
-  }
-
   section.visit-wrapper,
   .about-wrapper {
     padding-top: 70px;
@@ -1857,10 +1829,6 @@ footer {
   .map-wrapper::before {
     background-size: calc(105% - 10%);
     bottom: 0;
-  }
-
-  .schedule-heding h2 {
-    line-height: 35px;
   }
 
   .visit-image-wrapper img {
@@ -1938,30 +1906,9 @@ footer {
   }
 
   .heading-wrapper h1 {
-    font-size: 37px;
-    line-height: 51px;
-  }
-
-  .health-heding h2 {
-    font-size: 35px;
-    line-height: 49px;
-  }
-
-  .health-heding h2 span {
-    font-size: 49px;
-  }
-
-  .schedule-heding h2 {
-    font-size: 25px;
-  }
-
-  .schedule-heding h2 span {
-    font-size: 25px;
-  }
-
-  .education-awards h2 {
-    font-size: 23px;
-    line-height: 45px;
+    font-size: 42px;
+    line-height: normal;
+    padding-bottom: 10px;
   }
 
   .dental-service-first-col,
@@ -1983,7 +1930,7 @@ footer {
 
   .dentist-image img {
     width: 100%;
-    height: 538px;
+    height: auto;
   }
 
   .insurance-image img {
@@ -2042,17 +1989,8 @@ footer {
     padding-bottom: 70px;
   }
 
-  .accepting-name h2 {
-    font-size: 34px;
-  }
-
-  .heading-wrapper h1 {
-    padding-bottom: 10px;
-  }
-
   .second-heading h2 {
-    font-size: 27px;
-    line-height: 45px;
+    font-size: 36px;
   }
 
   .text-effect::after {
@@ -2101,11 +2039,6 @@ footer {
 
   section.insurance-wrapper {
     padding-top: 70px;
-  }
-
-  .accepting-name h2 {
-    font-size: 25px;
-    line-height: 53px;
   }
 
   section.location-wrapper {
@@ -2268,27 +2201,9 @@ footer {
     font-size: 16px;
   }
 
-  .health-heding h2 {
-    font-size: 38px;
-    line-height: 51px;
-  }
-
-  .health-heding h2 span {
-    font-size: 54px;
-  }
-
-  .accepting-name h2 {
-    font-size: 32px;
-    line-height: 49px;
-  }
-
   .sub-titlee {
     margin: 0 auto;
     margin-top: 28px;
-  }
-
-  .testomonail-heding {
-    text-align: center;
   }
 
   .insurance-details-wrapper h5 {
@@ -2421,11 +2336,6 @@ footer {
     font-size: 14px !important;
   }
 
-  .schedule-heding h2 {
-    font-size: 25px;
-    line-height: 39px;
-  }
-
   .service-content-wrapper p {
     padding-top: 0px;
     color: #0c7d8c;
@@ -2472,6 +2382,46 @@ footer {
 
   .details-content p {
     font-size: 12px !important;
+  }
+
+  .member-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .vector-smile {
+    width: 120%;
+    top: 46px;
+    left: -10px;
+  }
+
+  .about-your .text-wrapper {
+    max-width: 260px;
+  }
+
+  .second-heading h2 {
+    font-size: 32px;
+  }
+
+  .heading-wrapper p {
+    font-size: 12px !important;
+    padding-bottom: 10px;
+    padding-top: 25px;
+  }
+
+  .medium-heading {
+    font-size: 22px;
+  }
+
+  .awards-deteils h4 {
+    font-size: 18px;
+  }
+
+  .awards-icon-wrapper {
+    padding: 12px;
+    width: 50px;
+    height: 50px;
   }
 }
 
