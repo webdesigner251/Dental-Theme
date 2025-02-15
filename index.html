@@ -10,8 +10,6 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <!-- boostrap_link -->
     <link rel="stylesheet" href="assets/plugin/css/bootstrap.min.css">
-    <!-- aso animation css link   -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
     <style>
@@ -74,147 +72,35 @@
             overflow-y: hidden;
         }
 
-        .dropdown-item.active,
-        .dropdown-item:active {
-            background-color: var(--bg-pink) !important;
-        }
-
-        /* ===================== theme change buttone ===================== */
-        .theme-change {
-            top: 130px;
-            right: 50px;
-            z-index: 999;
-        }
-
-        .light_mood_thheme {
-            border: 1px solid white;
-            border-radius: 100%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation-name: spin;
-            animation-duration: 5000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-        .light_mood_thheme img {
-            width: 20px;
-            height: auto;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* ============  commun css all waeb page ===============*/
-        .text_color_white {
-            color: var(--colorwhite);
-        }
-
-        .font_Montserrat {
-            font-family: var(--secondary-font);
-        }
-
-        .font_size_13 {
-            font-size: 13px !important;
-        }
-
-        .text_opacity:hover {
-            opacity: 0.8;
-        }
-
-        .text_active:active {
-            opacity: 0.8;
-        }
-
-        .landing-page,
-        .landing-page p {
-            font-family: var(--secondary-font);
-        }
-
-        .landing-page p {
-            font-weight: 300;
-        }
-
         /* ================= header ============== */
-
-        .header {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 999;
-            background-color: transparent !important
-        }
-
-        .header-sticky {
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.096);
-            background-color: #f8f8f891 !important;
-        }
-
-        .font-style-new {
-            font-size: 16px !important;
-            font-weight: 700 !important;
-        }
-
-        .theme-btn {
-            background-color: var(--backgraundcolorblack) !important;
-            color: white !important;
-            font-size: 14px;
-            padding: 14px 23px !important;
-            border-radius: 50px !important;
-            border: 1px solid transparent;
-            transition: 0.3s all ease-in-out;
-        }
-
-        .theme-btn:hover,
-        .theme-btn-bordered:hover {
-            background-color: var(--backgraundcolorblack) !important;
-            transform: scale(1.1) !important;
-            border-color: transparent;
-        }
-
-        .theme-btn-bordered {
-            border: 1px solid white;
-            color: white !important;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 12px 23px !important;
-            border-radius: 50px !important;
-            transition: 0.3s all ease-in-out;
-        }
-
-        .theme-logo {
-            width: 120px;
-        }
-
-        .theme-logo img {
-            width: 100%;
-        }
-
-        .landing-page .navbar-brand {
-            max-width: 100px;
-        }
 
         .navbar-brand {
             max-width: 100px;
         }
 
+        .navbar-brand img {
+            width: 100%;
+            height: auto;
+        }
+
+        .theme-btn {
+            background-color: #0d7d8c;
+            border-radius: 50px;
+            padding: 12px 30px;
+            color: #FFF;
+            transition: 0.3s all ease;
+        }
+
+        .theme-btn:hover {
+            background-color: #1899d4;
+
+        }
         /* ========= hero-wrapper ================ */
 
         .hero-wrapper {
             position: relative;
             padding: 95px 0px 140px;
+            background: #4d536d;
         }
 
         .hero-wrapper .heading {
@@ -223,6 +109,8 @@
             font-weight: 700;
             padding: 30px 0 0 0;
             position: relative;
+            color: #FFF;
+            margin-bottom: 0;
         }
 
         .hero-wrapper .title {
@@ -267,7 +155,7 @@
 
         /* ==================== card_section_02 ============================================ */
         .theme-card-wrapper {
-            padding: 0px 0 0px 0px;
+            padding: 70px 0px;
         }
 
         .theme-card-wrapper .card_01 {
@@ -302,7 +190,7 @@
             font-size: 22px;
             font-weight: 700;
             text-align: center;
-            padding: 15px 0;
+            padding: 15px 0 0;
             text-align: center;
         }
 
@@ -467,17 +355,14 @@
         .our-features-wrapper .text_Awesome_Feature {
             font-size: 46px;
             font-weight: 700;
-            color: var(--colorwhite);
-            margin: 10px 0 0 0 !important;
-
         }
 
         .inner-wrapper.h-100-Feature {
-            padding: 100px 0px 0px 0px
+            padding: 30px 0px 0px 0px
         }
 
         .inner-wrapper.h-100-Feature .feature-card {
-            padding: 30px 50px 60px;
+            padding: 30px 50px;
             border: 1px solid rgb(255, 255, 255);
             border-radius: 20px;
             transition: 0.3s all linear;
@@ -496,6 +381,7 @@
 
         .inner-wrapper.h-100-Feature .feature-title {
             font-size: 22px;
+            margin: 0;
             font-weight: 500;
         }
 
@@ -968,7 +854,7 @@ index responcive css start
             }
 
             .theme-card-wrapper {
-                padding: 0px 0 0px 0px;
+                padding: 50px 0px;
             }
 
             .coming-soon-wrapper .img-wrapper .title {
@@ -1173,7 +1059,6 @@ index responcive css start
             ====================== */
 
 
-
         /* ================================================================================ */
         /* ============================= Landing page Ends ============================== */
         /* ================================================================================ */
@@ -1181,10 +1066,12 @@ index responcive css start
 </head>
 
 <body class="landing-page">
-    <div class="preloader"></div>
+    <!-- <div class="preloader"></div> -->
+
+
     <main class="main">
         <section class="hero-wrapper">
-            <div id="particles-js" class="animation-snow"></div>
+            <!-- <div id="particles-js" class="animation-snow"></div> -->
             <div class=" container">
                 <div class="row">
                     <div class="text">
@@ -1193,22 +1080,22 @@ index responcive css start
                         </a>
                         <h2 class="col-lg-8 mx-auto heading font_Montserrat text_color_white pt-3" data-aos="flip-left"
                             data-aos-duration="1000">
-                            Innovative and Creative One Page HTML Website.
+                            Multipage Dental Website Template With Bootstrap
                         </h2>
                         <p class="para col-lg-9 my-4 mx-auto text-center">Build Professional and Stylish Websites with
                             Our Custom Themes.</p>
                         <div class="d-flex align-items-center justify-content-center gap-3 mt-3 flex-wrap">
                             <a class="theme-btn mt-0 d-inline-block text-uppercase text-center" href="#">purchanse
                                 now</a>
-                            <a class="theme-btn-bordered mt-0 d-inline-block text-uppercase text-center"
-                                href="#demo_section">see Demo</a>
+                            <!-- <a class="theme-btn-bordered mt-0 d-inline-block text-uppercase text-center"
+                                href="#demo_section">see Demo</a> -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="grid-features-wrapper">
+        <!-- <section class="grid-features-wrapper">
             <div class="container">
                 <div class="col-lg-10 mx-auto">
                     <div class="row inner-wrapper h-100 align-items-center">
@@ -1240,7 +1127,7 @@ index responcive css start
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <div class="theme-card-wrapper" id="demo_section">
             <div class="container">
@@ -1251,44 +1138,112 @@ index responcive css start
                         </h2>
                     </div>
 
-                    <div class="col-md-8 col-11">
-                        <div class="image-parent-container">
-                            <div class="img_size_max">
-                                <div class="position-relative">
-                                    <div class="img-wrapper" data-aos="fade-up" data-aos-duration="1000">
-                                        <img class="img_size" src="assets/img/theme-banner-dark-01.png" alt="img">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-11">
+                            <div class="image-parent-container">
+                                <div class="img_size_max">
+                                    <div class="position-relative">
+                                        <div class="img-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                                            <img class="img_size" src="assets/img/theme-banner-dark-01.png" alt="img">
+                                        </div>
+                                        <div class="preview-btn ">
+                                            <a href="Live_version/index.html" target="_blank"
+                                                class="text_preview-btn text-black stretched-link">
+                                                Live Preview
+                                                <span class="incon"> <i
+                                                        class="text-black fa-solid fa-arrow-up-right-from-square"></i>
+                                                </span>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="preview-btn ">
-                                        <a href="Live_version/index.html" target="_blank"
-                                            class="text_preview-btn text-black stretched-link">
-                                            Live Preview
-                                            <span class="incon"> <i
-                                                    class="text-black fa-solid fa-arrow-up-right-from-square"></i>
-                                            </span>
-                                        </a>
-                                    </div>
+                                    <a class="text_Dark_Demo font_Montserrat text_Dark_Demo text-black "
+                                        href="Live_version/V1/dark/index.html">
+                                        <p class="font_Montserrat text_Dark_Demo text-black mb-0">Home Page Demo
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-arrow-up-right">
+                                                <line x1="7" y1="17" x2="17" y2="7" />
+                                                <polyline points="7 7 17 7 17 17" />
+                                            </svg>
+                                        </p>
+                                    </a>
                                 </div>
-                                <a class="text_Dark_Demo font_Montserrat text_Dark_Demo text-black "
-                                    href="Live_version/V1/dark/index.html">
-                                    <p class="font_Montserrat text_Dark_Demo text-black mb-0">Home 01 (Dark Version) -
-                                        Demo
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-arrow-up-right">
-                                            <line x1="7" y1="17" x2="17" y2="7" />
-                                            <polyline points="7 7 17 7 17 17" />
-                                        </svg>
-                                    </p>
-                                </a>
                             </div>
                         </div>
+                        <!-- <div class="col-md-4">
+                            <div class="image-parent-container">
+                                <div class="img_size_max">
+                                    <div class="position-relative">
+                                        <div class="img-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                                            <img class="img_size" src="assets/img/about.PNG" alt="img">
+                                        </div>
+                                        <div class="preview-btn ">
+                                            <a href="Live_version/index.html" target="_blank"
+                                                class="text_preview-btn text-black stretched-link">
+                                                Live Preview
+                                                <span class="incon"> <i
+                                                        class="text-black fa-solid fa-arrow-up-right-from-square"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a class="text_Dark_Demo font_Montserrat text_Dark_Demo text-black "
+                                        href="Live_version/V1/dark/index.html">
+                                        <p class="font_Montserrat text_Dark_Demo text-black mb-0">
+                                            About Page Demo
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-arrow-up-right">
+                                                <line x1="7" y1="17" x2="17" y2="7" />
+                                                <polyline points="7 7 17 7 17 17" />
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-parent-container">
+                                <div class="img_size_max">
+                                    <div class="position-relative">
+                                        <div class="img-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                                            <img class="img_size" src="assets/img/services.PNG" alt="img">
+                                        </div>
+                                        <div class="preview-btn ">
+                                            <a href="Live_version/index.html" target="_blank"
+                                                class="text_preview-btn text-black stretched-link">
+                                                Live Preview
+                                                <span class="incon"> <i
+                                                        class="text-black fa-solid fa-arrow-up-right-from-square"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a class="text_Dark_Demo font_Montserrat text_Dark_Demo text-black "
+                                        href="Live_version/V1/dark/index.html">
+                                        <p class="font_Montserrat text_Dark_Demo text-black mb-0">
+                                            Services Page Demo
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-arrow-up-right">
+                                                <line x1="7" y1="17" x2="17" y2="7" />
+                                                <polyline points="7 7 17 7 17 17" />
+                                            </svg>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
+
                 </div>
             </div>
         </div>
 
-        <section class="feature-wrapper">
+        <!-- <section class="feature-wrapper">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6 col-sm-12 px-0 col-wrapper">
@@ -1455,24 +1410,23 @@ index responcive css start
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="our-features-wrapper">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="ur_future text-start">
-                            <p class="font_Montserrat text_our_future m-0">OUR FEATURE</p>
+                        <div class="ur_future text-center">
                             <h2 class="font_Montserrat text_Awesome_Feature m-0 text-black">
                                 Awesome Feature
                             </h2>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <!-- <div class="col-lg-4">
                         <p class="font_Montserrat text-black">Enhance Your Website's Flexibility and Strength with These
                             Powerful Features. Enjoy High-Quality Functionality Without
                             Any Added Costs.</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="inner-wrapper h-100-Feature">
                     <div class="row justify-content-center">
@@ -1590,7 +1544,7 @@ index responcive css start
             </div>
         </section>
 
-        <section class="responsive-wrapper">
+        <!-- <section class="responsive-wrapper">
             <div class="container">
                 <div class="row col-lg-11 justify-content-center mx-auto bg-row">
                     <div class="col-lg-5 d-flex flex-column justify-content-center">
@@ -1611,9 +1565,9 @@ index responcive css start
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="cta-wrapper">
+        <!-- <section class="cta-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="svg_icone text-center" data-aos="fade-up" data-aos-duration="1000">
@@ -1626,7 +1580,7 @@ index responcive css start
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer>
@@ -1653,91 +1607,29 @@ index responcive css start
         </div>
     </footer>
 
-    <script src="assets/plugin/js/jquery.js"></script>
+    <!-- <script src="assets/plugin/js/jquery.js"></script> -->
     <script src="assets/plugin/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
     <script>
         // ===========================================================
         // Preloader starts
         // ===========================================================
-        $(window).on('load', function () {
-            function handlePreloader() {
-                if ($('.preloader').length) {
-                    $('.preloader').delay(100).fadeOut(500);
-                }
-            }
-            handlePreloader();
-        });
+        // $(window).on('load', function () {
+        //     function handlePreloader() {
+        //         if ($('.preloader').length) {
+        //             $('.preloader').delay(100).fadeOut(500);
+        //         }
+        //     }
+        //     handlePreloader();
+        // });
 
         // ===========================================================
         // Aos animation
         // ===========================================================
-        AOS.init();
+        // AOS.init();
 
-        // ===========================================================
-        // particlesJS 
-        // ===========================================================
-        particlesJS("particles-js", {
-            particles: {
-                number: {
-                    value: 100,
-                    density: {
-                        enable: true,
-                        value_area: 800,
-                    },
-                },
-                color: {
-                    value: "#FFF",
-                },
-                shape: {
-                    type: "circle",
-                    stroke: {
-                        width: 0,
-                        color: "#FFF",
-                    },
-                    polygon: {
-                        nb_sides: 5,
-                    },
-                },
-                opacity: {
-                    value: 0.3,
-                    random: false,
-                    anim: {
-                        enable: false,
-                        speed: 1,
-                        opacity_min: 0.1,
-                        sync: false,
-                    },
-                },
-                size: {
-                    value: 3,
-                    random: true,
-                    anim: {
-                        enable: false,
-                    },
-                },
-                line_linked: {
-                    enable: false,
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: "bottom",
-                    random: false,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false,
-                    attract: {
-                        enable: false,
-                        rotateX: 600,
-                        rotateY: 1200,
-                    },
-                },
-            },
-            retina_detect: true,
-        });
     </script>
 </body>
 
