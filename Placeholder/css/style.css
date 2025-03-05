@@ -1529,14 +1529,14 @@ footer {
   padding: 20px;
 }
 
-.blog-post-title a h3 {
+.blog-post-title h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.3em;
   color: #000;
 }
 
-.blog-post-card:hover .blog-post-title a h3 {
+.blog-post-card:hover .blog-post-title h3 {
   color: #0c7d8c;
 }
 
@@ -1664,8 +1664,8 @@ footer {
 
 .service-view-right-wrapper {
   padding: 36px 30px;
-  border-top: 1px solid #0d7d8c61;
-  border-bottom: 1px solid #0d7d8c61;
+  border: 1px solid #0d7d8c61;
+  border-radius: 16px;
 }
 
 .service-view-right-title h6 {
@@ -2227,6 +2227,24 @@ footer {
 
   .quote {
     margin-left: 0 !important;
+    padding: 25px;
+  }
+
+  .service-view-area {
+    padding: 40px 0px;
+  }
+
+  .related-service-area {
+    padding: 40px 12px 0px;
+  }
+
+  .details-wrapper {
+    padding: 50px 12px;
+  }
+
+  .our-testimonials-wrapper {
+    padding-top: 200px;
+    padding-bottom: 50px;
   }
 }
 
@@ -2363,6 +2381,18 @@ footer {
   .blog-details-wrap {
     padding: 30px 12px 0px;
   }
+
+  .same-banner-wrapper {
+    padding: 50px 12px;
+  }
+
+  .location-form {
+    padding: 20px;
+  }
+
+  .location-form form textarea.input-login-form {
+    border-radius: 15px;
+}
 }
 
 @media (max-width: 480px) {
@@ -2402,7 +2432,8 @@ footer {
   }
 
   footer {
-    padding-top: 60%;
+    background-position: center -20px;
+    padding-top: 20%;
   }
 
   /* contact page css */
