@@ -1239,11 +1239,19 @@ footer {
   border: 1px solid #fff !important;
 }
 
+.form-result {
+  padding: 12px 0px;
+  font-size: 16px;
+  color: #000;
+  line-height: normal;
+  text-align: center;
+  font-weight: 600;
+}
+
 .form-result span {
   padding: 10px;
   background-color: #FFF;
   border-radius: 50px;
-  margin: 19px 0 0;
   width: 100%;
   display: block;
   text-align: center;
@@ -1264,7 +1272,6 @@ footer {
   background: #ff1d1d;
   color: #FFF;
 }
-
 
 /* ========================================== Contact page css end ============================================ */
 
