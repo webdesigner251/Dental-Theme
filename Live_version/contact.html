@@ -101,19 +101,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="details-box-wrapper">
-                        <div class="d-flex flex-start">
-                            <div class="details-icon">
-                                <img src="image/details-img-1.png" alt="details-img-1">
-                            </div>
-                            <div class="details-body">
-                                <h4 class="details-title">Phone Number </h4>
-                                <div class="details-content">
-                                    <a href="tel:1234567890">1234567890</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
           </div>
           <div class="col-xl-4 col-md-6 col-12 mt-md-0 mt-4">
             <div class="details-box-wrapper animation-bottom">
@@ -159,24 +146,26 @@
                 <div class="sub-title"></div>
               </div>
               <div class="location-form mt-5">
-                <form>
-                  <div class="input-wrap">
-                    <div class="mb-3">
-                      <input class="input-login-form" type="text" placeholder="Name">
-                    </div>
-                    <div class="mb-3">
-                      <input class="input-login-form" type="email" placeholder="Email">
-                    </div>
-                    <div class="mb-3">
-                      <input class="input-login-form" type="number" placeholder="Phone">
-                    </div>
-                    <div class="mb-3">
-                      <textarea name="comment" class="input-login-form" rows="3" placeholder="Message"></textarea>
-                    </div>
+                <form method="POST" id="form">
+                  <input type="hidden" name="access_key" value="5f7de8a2-c500-4ae8-a8da-51ba07841449">
+                  <input type="hidden" name="subject" value="Dental Care New Appointment Request">
+                  <input type="hidden" name="form_type" value="Dental Care New Appointment">
+                  <div class="mb-3">
+                    <input class="input-login-form" name="Name" type="text" placeholder="Name">
+                  </div>
+                  <div class="mb-3">
+                    <input class="input-login-form" name="Email"  type="email" placeholder="Email">
+                  </div>
+                  <div class="mb-3">
+                    <input class="input-login-form" name="Phone number" type="number" placeholder="Phone">
+                  </div>
+                  <div class="mb-3">
+                    <textarea name="Message" class="input-login-form" rows="3" placeholder="Message"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>
+              <div id="result" class="form-result"></div>
             </div>
           </div>
           <div class="col-lg-6 map-animation pt-md-0 pt-4 ps-lg-5 ps-2 px-2">
@@ -281,6 +270,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/contact-form.js"></script>
 </body>
 
 </html>
